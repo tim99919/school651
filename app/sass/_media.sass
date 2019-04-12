@@ -1,0 +1,163 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+
+	.s-banner
+		.car-banner-item 
+			&-1 
+				height: 400px
+			&-2 
+				height: 400px
+			&-3
+				height: 400px
+
+	.s-news
+		.news-car-wrap
+			.owl-nav
+				.owl-prev
+					left: -32px
+				.owl-next
+					right: -32px
+
+	.s-news
+		.events-car-wrap
+			.owl-nav
+				.owl-prev
+					left: -32px
+				.owl-next
+					right: -32px
+
+
+
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+
+	.logo_img
+		img 
+			max-height: 100px
+			margin-bottom: 15px
+
+	.header-content
+		min-height: 326px
+
+	h1
+		font-size: em(14)
+	.buttons
+		display: flex
+		justify-content: space-between
+
+	.s-banner
+		.car-banner-item 
+			&-1 
+				height: 300px
+				.banner-content
+					h2
+						letter-spacing: em(3)
+						font-size: em(30)
+			&-2 
+				height: 300px
+				.banner-content
+					h2
+						letter-spacing: em(3)
+						font-size: em(30)
+			&-3
+				height: 300px
+				.banner-content
+					h2
+						letter-spacing: em(3)
+						font-size: em(30)
+
+	.but-first-line
+		display: inline-flex
+		justify-content: flex-start
+
+	.owl-nav
+		display: none
+		
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+	
+	.s-banner
+		.car-banner-item 
+			&-1 
+				height: 200px
+				.banner-content
+					h2
+						letter-spacing: em(3)
+						font-size: em(20)
+			&-2 
+				height: 200px
+				.banner-content
+					h2
+						letter-spacing: em(3)
+						font-size: em(20)
+			&-3
+				height: 200px
+				.banner-content
+					h2
+						letter-spacing: em(3)
+						font-size: em(20)
+	
+	footer
+		.contacts
+			h3
+				margin-top: 35px
+	
+
+
+//Extra small: >0
++media-breakpoint-down(xs)
+
+	.ishome
+		h1
+			font-size: em(12)
+		.button
+			min-height: 35px
+			// font-size: em(13)
+		h2
+			font-size: em(23)
+		h3
+			font-size: em(18)
+
+	.contacts
+		h3
+			font-size: em(30)
+
+	.poor-eye-but
+		.button
+			font-size: em(22)
+
+	.info
+		.wrapper
+			justify-content: start;
+
+
+	.buttons
+		font-size: em(13)
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
